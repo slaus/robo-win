@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Disallow: /?
+Disallow: /download
+Disallow: /system
+
+User-agent: Yandex
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Disallow: /?
+Disallow: /download
+Disallow: /system
+
+User-agent: Googlebot
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Disallow: /?
+Disallow: /download
+Disallow: /system
+
+Sitemap: https://robo-win.ru/sitemap.xml
+

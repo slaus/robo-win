@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Программа для анализа футбольных матчей: скачать программу для прогноза ставок на спорт | Robo-Win 2.0</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="&#9917; Robo-Win 2.0 &#9917; – лучшая программа для анализа футбольных матчей для ставок. Более 81% верных прогнозов! &#128176; Для расчета исхода матча используется множество факторов, чтобы прогноз был наиболее точным!">
+	<!-- Google Font Roboto -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+	<!-- style.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+	
+<script type="text/javascript">
+//соединяемся с API Youtube
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function checkPosition(){
+//функция проверки видимости элемента на jquery
+var div_position = $('#video-placeholder').offset();
+var div_top = div_position.top;
+var div_left = div_position.left;
+var div_width = $('#video-placeholder').width();
+var div_height = $('#video-placeholder').height();
+var top_scroll = $(document).scrollTop();
+var left_scroll = $(document).scrollLeft();
+var screen_width = $(window).width();
+var screen_height = $(window).height()+600;
+var see_x1 = left_scroll;
+var see_x2 = screen_width + left_scroll;
+var see_y1 = top_scroll;
+var see_y2 = screen_height + top_scroll;
+var div_x1 = div_left;
+var div_x2 = div_left + div_height;
+var div_y1 = div_top;
+var div_y2 = div_top + div_width;
+if( div_x1 >= see_x1 && div_x2 <= see_x2 && div_y1 >= see_y1 && div_y2 <= see_y2 ){
+//если элемент видим на экране, запускаем видео Youtube
+player.playVideo();
+}else{
+//если не видим, ставим видео на паузу
+player.pauseVideo();
+}
+}
+
+$(document).ready(function(){
+//запускаем функцию проверки видимости элемента
+$(document).scroll(function(){
+checkPosition();
+});
+$(window).resize(function(){
+checkPosition();
+});
+});
+
+
+
+function onYouTubeIframeAPIReady() {
+//рисуем видеопроигрыватель Youtube
+player = new YT.Player('video-placeholder', {
+width: 700, height: 400, //размеры окна видео
+playerVars: { 'autoplay': 0, 'controls': 0, 'showinfo': 0, 'rel': 0}, //тонкие настройки видеопроигрывателя
+videoId: 'E1C3cw6L5LE', //здесь id ролика
+});}
+</script>
+
+
+
+
+</head>
+<body>
+	
+
+
+
+	<!-- Шапка -->
+	<header id="header">
+		<div class="container">
+			<!-- Меню -->
+			<div class="toggle-main-menu visible-xs text-center">
+				<img src="images/icons/toggle-menu.png" alt="">	
+			</div>
+			<div class="main-menu sectionSlide" id="mainMenu">
+				<nav>
+					<ul class="list-inline">
+						<li>
+							<a href="#howItWork">Как работает</a>
+						</li>
+						<li>
+							<a href="#newVersion">В новой версии</a>
+						</li>
+						<li>
+							<a href="#stepsUse">Прогноз в 2 клика</a>
+						</li>
+						<li>
+							<a href="#rates">Тарифы</a>
+						</li>
+						<li>
+							<a href="#forecastResults">Сколько заработали</a>
+						</li>
+						<li>
+							<a href="#reviews">Отзывы</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Текст в шапке -->
+			<div class="header-txt">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="txt-box">
+							<div class="heading">
+								<h1>Robo-Win 2.0 – программа №1 <br>
+									для анализа матчей по футболу 
+								</h1>
+							</div>
+							<p>
+								<span>
+									Программа для анализа футбольных матчей Robo-Win 2.0 на сегодняшний день производит наиболее
+								</span> 
+								<span>точный расчёт исхода игры, так как учитывает множество факторов: начиная от количества</span> игр в сезоне, побед, забитых мячей и заканчивая мотивированностью команды, судейством и погодными условиями.
+							</p>
+							<p>
+								<span>Новичок Вы или профессиональный каппер, программа «Robo-Win v.2.0.» поможет Вам сделать</span>  
+								правильную ставку на исход футбольного матча
+							</p>
+							<div class="sectionSlide">
+								<a href="#rates" class="btn btn-default">Получить доступ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="robot">
+					<img src="images/robots/header-robot.png" alt="">
+				</div>
+				<div class="slide-content sectionSlide">
+					<a href="#main"><img src="images/icons/main-slide.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<main id="main">
+		<div class="section dark-section info-block">
+			<div class="container">
+				<div class="video">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div id="video-placeholder"></div>
+						</div>
+					</div>
+				</div>
+				<div class="results text-center">
+					<div class="row align-items-center">
+						<div class="col-md-4">
+							<div class="item">
+								<div class="text-center">
+									<p class="lend"> Спрогнозирован верный исход</p>
+									<h2 class="ff-roboto">
+										<span class="color-blue"><strong>более 83% матчах</strong></span>
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 hidden-xs">
+							<div class="sectionSlide">
+								<a href="#rates" class="btn btn-default btn-block">Получить доступ</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="item">
+								<div class="text-center">
+									<p class="lend"> Было проанализировано</p>
+									<h2 class="ff-roboto">
+										<span class="color-blue"><strong>более 9 000 матчей</strong></span>
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 visible-xs">
+							<div class="item">
+								<div class="sectionSlide">
+									<a href="#rates" class="btn btn-default">Получить доступ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Как программа вычисляет прогноз исхода матча -->
+		<section class="work-steps" id="howItWork">
+			<div class="container">
+				<div class="section-heading text-center">
+					<h2>Как программа вычисляет прогноз исхода матча</h2>
+				</div>
+				<div class="section-main">
+					<div class="work-outline row no-gutters">
+						<div class="col-md-4">
+							<div class="item item-first item-left-margin">
+								<p class="lend">Сбор данных на лучших сайтах <br>
+								с платными прогнозами</p>
+							</div>
+							<div class="item center-item">
+								<p class="lend">
+									Сбор данных <br>
+									на тематических форумах
+								</p>
+							</div>
+							<div class="item item-left-margin">
+								<p class="lend">
+									Сбор данных на других <br>
+									проверенных источниках 
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 align-self-center hidden-xs">
+							<div class="total text-center">
+								<p class="big-lend">
+									В итоге более
+								</p>
+								<div class="interest" id="counter">
+									<h2 class="color-blue">83%</h2>
+								</div>
+								<p class="big-lend">
+									верных исходов матчей
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="item text-right item-first item-right-margin">
+								<p class="lend">Сбор данных с проверенных <br>
+								новостных ресурсов</p>
+							</div>
+							<div class="item text-right center-item">
+								<p class="lend">
+									Анализ собранной информации <br>
+									по заданному алгоритму
+								</p>
+							</div>
+							<div class="item text-right item-right-margin">
+								<p class="lend">
+									Сбор данных <br>
+									от лучших букмекеров
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 align-self-center visible-xs">
+							<div class="total text-center">
+								<p class="big-lend">
+									В итоге более
+								</p>
+								<div class="interest">
+									<h2 class="color-blue">83%</h2>
+								</div>
+								<p class="big-lend">
+									верных исходов матчей
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 4 преимущества в новой версии 2.0 -->
+		<div class="advantages section" id="newVersion">
+			<div class="container">
+				<div class="robot">
+					<img src="images/robots/advantages-robot.png" alt="">
+				</div>
+				<div class="row justify-content-end">
+					<div class="col-md-8">
+						<h2>4 преимущества в новой версии 2.0</h2>
+						<div class="advantages-list">
+							<ul class="list-unstyled">
+								<li>
+									Мы исключили сбор прогнозов с бесплатных источников 
+								</li>
+								<li>
+									Добавлено большее количество сайтов с платными прогнозами
+								</li>
+								<li>
+									Обновлён алгоритм анализа собранных данных
+								</li>
+								<li>
+									Выдача двух прогнозов наиболее вероятного исхода матча
+								</li>
+							</ul>
+						</div>
+						<div class="btn-box sectionSlide">
+							<a href="#rates" class="btn btn-default">Получить доступ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Всего 2 клика и перед Вами высокоточный прогноз на любой матч -->
+		<section class="steps-use" id="stepsUse">
+			<div class="container">
+				<div class="section-heading text-center">
+					<h2>Всего 2 клика и перед Вами <br>
+					высокоточный прогноз на любой матч</h2>
+				</div>
+				<div class="section-main">
+					<div class="row justify-content-center">
+						<div class="col-md-6">
+							<div class="item text-center">
+								<div class="img">
+									<img src="images/steps-use/a1.jpg" alt="Авторизация в программе Robo-Win" class="img-responsive">
+								</div>
+								<p>1. Авторизуйтесь в программе</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="item text-center">
+								<div class="img">
+									<img src="images/steps-use/a2.jpg" alt="Выбор футбольного матча для прогноза исхода – Robo-Win" class="img-responsive">
+								</div>
+								<p>2. Выберите матч</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="item text-center">
+								<div class="img">
+									<img src="images/steps-use/a3.jpg" alt="Наиболее вероятный исход матча  – Robo-Win" class="img-responsive">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Тарифы и стоимость программы для расчета исхода матча Robo-Win 2.0 -->
+		<section class="rates" id="rates">
+			<div class="container">
+				<div class="section-heading">
+					<h2 class="text-center">Тарифы и стоимость программы для расчета <br> исхода матча Robo-Win 2.0</h2>
+				</div>
+				<div class="section-main">
+					<div class="prices-list">
+						<div class="row no-gutters justify-content-center">
+							<div class="col-lg-10">
+								<div class="row no-gutters align-items-center">
+									<div class="col-md-4">
+										<div class="price-rate text-center">
+											<div class="rate-access row no-gutters align-items-center bg-blue">
+												<div class="col">
+													<p class="lend"><strong>Доступ  на 1 месяца</strong></p>
+												</div>
+											</div>
+											<div class="rate-content rate-content-small row align-items-center">
+												<div class="col">
+													<p>цена с 30 июня 2018 г.</p>
+													<div class="old-price">
+														7 000руб.
+													</div>
+													<p class="lend"><span class="color-blue"><strong>действующая цена</strong></span></p>
+													<div class="price">
+														<span class="color-blue"><strong>5 000 руб.</strong></span>
+													</div>
+													<div class="btn-box">
+														<a href="https://glopart.ru/buy/180763" class="btn btn-transparent btn-block btn-fz-20">Получить доступ</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="price-rate text-center bg-blue main-rate">
+											<div class="rate-access row no-gutters align-items-center">
+												<div class="col">
+													<p class="lend"><span class="color-blue"><strong>Доступ  на 2 месяца</strong></span></p>
+												</div>
+											</div>
+											<div class="rate-content row align-items-center">
+												<div class="col">
+													<p>цена с 30 июня 2018 г.</p>
+													<div class="old-price">
+														9 000руб.
+													</div>
+													<p class="lend"><strong>действующая цена</strong></p>
+													<div class="price"><strong>7 000 руб.</strong></div>
+													<div class="btn-box">
+														<a href="https://glopart.ru/buy/180766" class="btn btn-white btn-block btn-fz-20"><strong>Получить доступ</strong></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="price-rate text-center">
+											<div class="rate-access row no-gutters align-items-center bg-blue">
+												<div class="col">
+													<p class="lend"><strong>Доступ  на 3 месяца</strong></p>
+												</div>
+											</div>
+											<div class="rate-content rate-content-small row align-items-center">
+												<div class="col">
+													<p>цена с 30 июня 2018 г.</p>
+													<div class="old-price">
+														11 000руб.
+													</div>
+													<p class="lend"><span class="color-blue"><strong>действующая цена</strong></span></p>
+													<div class="price">
+														<span class="color-blue"><strong>9 000 руб.</strong></span>
+													</div>
+													<div class="btn-box">
+														<a href="https://glopart.ru/buy/180769" class="btn btn-transparent btn-block btn-fz-20">Получить доступ</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="download text-center">
+						<p class="lend">
+							<div class="color-blue">
+								<strong>Скачать программу для анализа футбольных матчей Robo-Win 2.0 <br>
+								Вы сможете по ссылке, которая придет на Ваш e-mail сразу после оплаты</strong>
+							</div >
+						</p>
+					</div>
+					<div class="download-info">
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<div class="item">
+									<p class="lend decoration">
+										<strong>
+											Программа работает на Win 10, 7, 8 
+										</strong>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-4 text-center">
+								<div class="item">
+									<p class="lend decoration">
+										<strong>Программа защищена от взлома</strong>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-4 text-center">
+								<div class="item">
+									<p class="lend decoration">
+										<strong>Вход возможет только с одного ПК</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Примеры результатов прогнозов -->
+		<section class="forecast-results" id="forecastResults">
+			<div class="container">
+				<div class="section-heading text-center">
+					<h2>Результат ставок по прогнозам <br>программы «Robo-Win 2.0» за 5 дней 	<br>+ 74 116 руб.	 </h2>
+				</div>
+				<div class="section-main">
+					<div class="forecast-results-slider">
+						<div class="item">
+							<img src="images/forecast-results/1.jpg" alt="Результаты ставок на футбол, спрогнозированные программой Robo-Win - день 1" class="img-responsive">
+						</div>
+						<div class="item">
+							<img src="images/forecast-results/2.jpg" alt="Результаты ставок на футбол, спрогнозированные программой Robo-Win - день 2" class="img-responsive">
+						</div>
+						<div class="item">
+							<img src="images/forecast-results/3.jpg" alt="Результаты ставок на футбол, спрогнозированные программой Robo-Win - день 3" class="img-responsive">
+						</div>
+						<div class="item">
+							<img src="images/forecast-results/4.jpg" alt="Результаты ставок на футбол, спрогнозированные программой Robo-Win - день 4" class="img-responsive">
+						</div>
+						<div class="item">
+							<img src="images/forecast-results/5.jpg" alt="Результаты ставок на футбол, спрогнозированные программой Robo-Win - день 5" class="img-responsive">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Отзывы покупателей программы прогнозов на спорт Robo-Win 2.0 -->
+		<section class="reviews pt-0" id="reviews">
+			<div class="container">
+				<div class="section-heading text-center">
+					<h2>Отзывы покупателей программы <br>
+						прогнозов на спорт Robo-Win 2.0
+					</h2>
+				</div>
+				<div class="section-main">
+					<div class="reviews-slider">
+						<div class="item text-center">
+							<img src="images/reviews/1.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="item text-center">
+							<img src="images/reviews/2.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="item text-center">
+							<img src="images/reviews/3.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="item text-center">
+							<img src="images/reviews/4.jpg" alt="" class="img-responsive">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="section dark-section text-section">
+			<div class="container">
+				<div class="robot hidden-sm hidden-xs">
+					<img src="images/robots/text-section.png" alt="">
+				</div>
+				<div class="row justify-content-end">
+					<div class="col-lg-6">
+						<p>
+							Все программы, которые Вы могли видеть ранее на просторах интернета – это программы, которые выдают прогноз матча, согласно статистики играющих между собой команд, их прошлых игр с другими командами, а также очных встреч этих же команд в прошлых турах и сезонах.
+						</p>
+						<p>
+							Однако кроме статистики предыдущих игр, есть огромное количество факторов, которые влияют на исход матча. Такие как - мотивация команды, состав команды, моральное состояние игроков, кто будет судействовать в матче, даже погодные условия и количество болельщиков на стадионе играют не малую роль в исходе матча. Поэтому мы точно можем заявить, что программа «Robo-Win 2.0» учитывает все факторы и выдает прогноз матча, проанализировав каждый из них.
+						</p>
+						<p>
+							Вы должны понимать, что программа «Robo-Win 2.0» - это самый лучший помощник, для анализа любого футбольного матча. Но делать ставки по прогнозам «Robo-Win 2.0» Вы должны только, если сами полностью согласны с прогнозом программы. 
+						</p>
+						<p>
+							<strong>	Удачных Вам ставок и большого прироста к банку!</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<!-- Футер -->
+	<footer id="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row justify-content-between">
+					<div class="col-3 link">
+						<a href="" class="decoration">Оферта</a>
+					</div>
+					<div class="col-9 mail text-right">
+						<a href="">robo-win@yandex.ru</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-slogan">
+				<div class="text-center">
+					<p>2018 All rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
